@@ -2,3 +2,11 @@
 _includes/sidebar.html~
 
 *.html~
+
+cv/cv_15.aux
+cv/cv_15.bbl
+cv/cv_15.blg
+cv/cv_15.log
+cv/cv_15.out
+cv/cv_15.pdf
+cv/cv_15.synctex.gz

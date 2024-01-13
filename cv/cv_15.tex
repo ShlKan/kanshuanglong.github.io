@@ -50,7 +50,7 @@ Shuanglong Kan \\ % Your name
     
 \Sep % Some whitespace
 \textbf{Address} \\
-Über den Bächelwiesen 15B\\ % Address 1
+Nelkenstr. 114A\\ % Address 1
 67691 Hochspeyer	 \\ % Address 2
 Germany \\ % Address 3
 \vfill % Whitespace under this block to push it up under the photo
@@ -80,15 +80,14 @@ Germany \\ % Address 3
 %	Objective
 %----------------------------------------------------------------------------------------
 
-\aboutme{Background}{I am a computer scientist focusing on solving safety and security challenges in programming languages and compilers. Some of my representative works are as follows:
+\aboutme{Background}{My research focusing on solving safety and security challenges in programming languages. Some of my representative works are as follows:
 	\begin{itemize}
-		\item A certified SMT solver for string data types. The solver algorithms are formalized and proved correct in Isabelle/HOL. Isabelle automatically generates the executable code in OCaml from verified algorithms.
+		\item A certified SMT solver (\href{https://dl.acm.org/doi/10.1145/3497775.3503691}{CertiStr}) for string data types. The solver algorithms are formalized and proved correct in \href{https://isabelle.in.tum.de/}{Isabelle/HOL}. Leveraging Isabelle/HOL to automatically generate the executable code in OCaml from the verified algorithms.
 		\item A certified compiler for SIGNAL language. SIGNAL is a synchronous language designed for embedded systems. The low-level code generation procedure is mathematically verified by \href{http://www.event-b.org/}{Event-B}. Event-B is a formal modeling and verification tool supporting refinement-based system development.
 		\item A front-end for C language to automatically support code instruments for testing. For some special testing requirements, the tool automatically inserts testing code.
 		\item The verification-oriented compilers for Rust and Solidity languages. The compilers translate Rust or Solidity programs to mathematical formulas, and we then leverage mathematical tools to reason the  programs' correctness automatically.
 	\end{itemize}
-	
-	Most of my works are published in top-tier conferences, such as POPL (ACM SIGPLAN Symposium on Principles of Programming Languages), ISSTA (ACM SIGSOFT International Symposium on Software Testing and Analysis), S\&P (IEEE Symposium on Security and Privacy). 
+	Most of my works are published in top-tier or professional formal methods conferences, such as POPL (ACM SIGPLAN Symposium on Principles of Programming Languages), ISSTA (ACM SIGSOFT International Symposium on Software Testing and Analysis), S\&P (IEEE Symposium on Security and Privacy), and CPP (Certified Programs and Proofs). 
 }
 
 %----------------------------------------------------------------------------------------
@@ -108,7 +107,7 @@ Thesis: Research on the Trustworthy Code Generation from SIGNAL
 	\item \href{http://polychrony.inria.fr/}{SIGNAL} is a mathematical modeling language for distributed reactive system.
 	\item Design a multi-threaded code generation from SIGNAL.
 	\item Mathematically prove  the correctness of the code generation in \href{http://www.event-b.org/}{Event-B}.
-	\item Develop model checking techniques for state machines.
+	\item Develop model checking techniques for state/event systems modeled by SIGNAL.
 \end{itemize}
 ~\\
 %------------------------------------------------
@@ -133,7 +132,7 @@ Project: Certified code generation from SIGNAL.
 
 %------------------------------------------------
 
-\CVItem{01.11.2022 - now, Senior  Software Engineer in \href{https://www.certik.com/}{Certik}, remote work, a Web3 Security company focusing smart contracts and cryptography.}{
+\CVItem{01.11.2022 - now, Freelancer,  one customer is \href{https://www.certik.com/}{Certik},  a Web3 company focusing smart contract security.}{
 Certik is a leading web3 security company located in New York, US.\\
 Project:  A verification-oriented compiler for Solidity language
 \begin{itemize}
@@ -152,19 +151,16 @@ Vulnerabilities in smart contracts may yield billions of dollars being hacked.
 Project: A Certified mathematical reasoning tool for string types in programming languages. Supervisor Anthony W. Lin
 \begin{itemize}
 	
-	\item I developed a certified string solver using Isabelle interactive theorem prover, which can be widely used in programming language verification. Amazon AWS and Microsoft Azure also use string solvers heavily for access control policies.
+	\item I developed a certified string solver using Isabelle  proof assistant, which can be widely used in programming language verification. Amazon AWS and Microsoft Azure also use string solvers heavily for access control policies.
 
-\item Certified Software means the software is mathematically proved by interactive theorem prover, such as \href{https://coq.inria.fr/}{Coq} and \href{https://isabelle.in.tum.de/}{Isabelle}. 
+\item Certified Software means the software is mathematically proved by interactive proof assistant, such as \href{https://coq.inria.fr/}{Coq} and \href{https://isabelle.in.tum.de/}{Isabelle}. 
 	
-\item \href{https://compcert.org/}{Compcert} C compiler and \href{https://sel4.systems/}{sel4} operating system are developed by Coq and Isabelle respectively to provide high-assured compiler and operating systems.
-
-
 
 \end{itemize}
 
-More info:
+More info about
 SMT solvers, such as \href{https://github.com/Z3Prover/z3}{z3}, and \href{https://cvc5.github.io/}{CVC5} are widely used in providing automated reasoning power for computer systems. Tools, such as \href{https://frama-c.com/}{Frama-C},  Event-B,  Software Model checkers (such as \href{https://monteverdi.informatik.uni-freiburg.de/tomcat/Website/}{Ultimate}, 
-\href{https://cpachecker.sosy-lab.org/}{CPAChecker}, and \href{https://www.cprover.org/cbmc/}{CBMC}) are all based on SMT solvers.
+\href{https://cpachecker.sosy-lab.org/}{CPAChecker}, and \href{https://www.cprover.org/cbmc/}{CBMC}) are all based on SMT solvers. Our string solver can be integrated into the existing SMT solvers. 
 }
 
 \clearpage % Start a new page
@@ -194,6 +190,118 @@ SMT solvers, such as \href{https://github.com/Z3Prover/z3}{z3}, and \href{https:
 
 
 
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+\CVSection{Fellowships/Awards}
+
+%------------------------------------------------
+
+\CVItem{2016, \textit{Visiting PhD student Scholarship}, Nanjing University of Aeronautics and Astronautics}{The scholarship covers all my expense for the academic visiting in Toulouse, France.}
+
+
+\CVItem{2017, \textit{Excellent Doctor degree dissertation}, Nanjing University of Aeronautics and Astronautics}{For my PhD thesis: Research on the Trustworthy Code Generation from SIGNAL.}
+
+
+\CVItem{2019, \textit{ISSTA Distinguished Paper Award}}{The ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) is the leading research symposium on software testing and analysis.}
+
+
+\CVItem{2022, \textit{CPP Distinguished Paper Award}}{Certified Programs and Proofs (CPP) is an international conference on practical and theoretical topics in all areas that consider formal verification and certification as an essential paradigm for their work}
+
+\CVItem{2023, \textit{SMT-COMP 2023 (Satisfiability Modulo Theories Competition) Winner of the Logic String}}{SMT-COMP is the most important contest in SMT community.}
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+
+\CVSection{Skills}{
+
+%------------------------------------------------
+I am skilled in the following languages and tools.
+\begin{itemize}   
+    \item Isabelle proof assistant, with which I developed a certified sequence solver.
+    \item Coq proof assistant. I learned Coq when I was a PhD student, but unfortunately, I never used Coq in real projects.
+    \item Event-B, which is a formal method for system-level modeling and analysis, with which I proof the code generation of SIGNAL language.
+    \item \href{https://mlir.llvm.org/}{LLVM MLIR}, an infrastructure for building reusable and extensible compilers.  
+    \item Git, with a team of more than 6 developers.
+    \item Programming languages: OCaml C, C++, Python, Java, Rust, Solidity (smart contract language), OCaml.  
+	\end{itemize}
+	}
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+
+
+
+
+\Sep % Extra whitespace after the end of a major section
+
+\CVSection{Publications}
+
+%------------------------------------------------
+
+\textbf{Conference Papers}
+\begin{enumerate}
+	\item \publication{chen2022solving} 
+	 \item \publication{KanLRS22}
+	 \item \publication{DBLP:conf/sp/JiaoK0S0020}
+	\item \publication{DBLP:conf/issta/ChenYKQX19}
+\end{enumerate}
+
+\clearpage % Start a new page
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+\begin{enumerate}
+	\setcounter{enumi}{5}
+	\item \publication{DBLP:conf/sigsoft/Kan14}
+	\item \publication{DBLP:conf/icfem/KanHC16}
+	\item \publication{DBLP:conf/memocode/BodeveixFK17}
+	\item \publication{DBLP:conf/iceccs/JiangSZK019}
+\end{enumerate}
+~\\\\
+
+\textbf{Journal Papers}
+
+\begin{enumerate}
+	\item \publication{yin2021safeosl}
+	\item \publication{DBLP:journals/logcom/KanHCLH17}
+	\item \publication{DBLP:journals/cj/KanH18}
+	\item \publication{DBLP:journals/spe/KanH18}
+	\item \publication{DBLP:journals/compsec/HuZLZKC21}
+	\item \publication{DBLP:journals/access/LiKH17}
+	\item \publication{DBLP:journals/corr/abs-1804-07608}
+	\item \publication{yan2018location}
+	\item \publication{kan2014bounded}(in Chinese)
+\end{enumerate}
+
+%------------------------------------------------
+
+\Sep
+
+%----------------------------------------------------------------------------------------
+
+\CVSection{Projects}
+\begin{enumerate}
+	\item Research on Verification for the Memory Safety Mechanisms of Rust, Young Scientists Fund of the National Natural Science Foundation of China (PI) 250,000 CNY
+	\item Securify: A compositional Approach of Building Security Verified System, \url{http://securify.sce.ntu.edu.sg/}(Participant)
+	\item Research on Privacy Modeling and Verification in Evolving Cloud Computing, National Natural Science Foundation of China (Participant)
+\end{enumerate}
+
+\clearpage % Start a new page
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
 \CVSection{Teaching}
 
 
@@ -211,116 +319,6 @@ SMT solvers, such as \href{https://github.com/Z3Prover/z3}{z3}, and \href{https:
 \CVItem{An Introduction to Isabelle Interactive  Proof Assistant}{Department of Computer Science, Summer semester 2020, TU Kaiserslautern, Germany}
 
 \CVItem{Logic and Verification Seminar}{Department of Computer Science, Summer semester 2020, TU Kaiserslautern, Germany}
-
-
-
-
-
-%----------------------------------------------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-\CVSection{Fellowships/Awards}
-
-%------------------------------------------------
-
-\CVItem{2016, \textit{Visiting PhD student Scholarship}, Nanjing University of Aeronautics and Astronautics}{The scholarship covers all my expense for the academic visiting in Toulouse, France}
-
-
-\CVItem{2017, \textit{Excellent Doctor degree dissertation}, Nanjing University of Aeronautics and Astronautics}{For my PhD thesis: Research on the Trustworthy Code Generation from SIGNAL}
-
-
-\CVItem{2019, \textit{ISSTA Distinguished Paper Award}}{The ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA) is the leading research symposium on software testing and analysis}
-
-
-\CVItem{2022, \textit{CPP Distinguished Paper Award}}{Certified Programs and Proofs (CPP) is an international conference on practical and theoretical topics in all areas that consider formal verification and certification as an essential paradigm for their work}
-
-\CVItem{2023, \textit{SMT-COMP 2023 (Satisfiability Modulo Theories Competition) Winner of the Logic String}}{SMT-COMP is the most important contest in SMT community.}
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-
-\CVSection{Skills}{
-
-%------------------------------------------------
-I am an expert of the following languages and tools.
-\begin{itemize} 
-	\item Programming languages: C, C\#, Python, Java, Rust, Solidity (smart contract language), OCaml.
-	\item Github, Docker and AWS
-	\item Event-B, which is a formal method for system-level modelling and analysis.
-    \item \href{https://www.cs.bu.edu/~hwxi/atslangweb/}{ATS} is a functional-like programming language that generates corresponding C code for low-level applications. You can mathematically prove an ATS program bug-free, and this proof will guarantee the generated C code is also bug-free. 
-    \item Isabelle interactive theorem prover, with which I developed a certified sequence solver.
-    \item Coq proof assistant. Coq also supports dependent type as ATS.
-	\end{itemize}
-	}
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-
-
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
-
-\Sep % Extra whitespace after the end of a major section
-
-\CVSection{Publications}
-
-%------------------------------------------------
-
-\textbf{Conference Papers}
-\begin{enumerate}
-	\item \publication{chen2022solving} 
-	 \item \publication{KanLRS22}
-	 \item \publication{DBLP:conf/sp/JiaoK0S0020}
-	\item \publication{DBLP:conf/issta/ChenYKQX19}
-	\item \publication{DBLP:conf/sigsoft/Kan14}
-	\item \publication{DBLP:conf/icfem/KanHC16}
-	\item \publication{DBLP:conf/memocode/BodeveixFK17}
-	\item \publication{DBLP:conf/iceccs/JiangSZK019}
-\end{enumerate}
-~\\\\
-
-\textbf{Journal Papers}
-
-\begin{enumerate}
-	\item \publication{yin2021safeosl}
-	\item \publication{DBLP:journals/logcom/KanHCLH17}
-	\item \publication{DBLP:journals/cj/KanH18}
-	\item \publication{DBLP:journals/spe/KanH18}
-	\item \publication{DBLP:journals/compsec/HuZLZKC21}
-	\item \publication{DBLP:journals/access/LiKH17}
-\end{enumerate}
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
-
-\Sep % Extra whitespace after the end of a major section
-
-\begin{enumerate}
-	\setcounter{enumi}{6}
-	\item \publication{yan2018location}
-	\item \publication{kan2014bounded}(in Chinese)
-\end{enumerate}
-
-%------------------------------------------------
-
-
-
-%----------------------------------------------------------------------------------------
-
-\CVSection{Projects}
-\begin{enumerate}
-	\item Research on Verification for the Memory Safety Mechanisms of Rust, Young Scientists Fund of the National Natural Science Foundation of China (PI) 250,000 CNY
-	\item Securify: A compositional Approach of Building Security Verified System, \url{http://securify.sce.ntu.edu.sg/}(Participant)
-	\item Research on Privacy Modeling and Verification in Evolving Cloud Computing, National Natural Science Foundation of China (Participant)
-\end{enumerate}
-
-\Sep
 
 \CVSection{Student Supervision}
 
